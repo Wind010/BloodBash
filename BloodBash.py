@@ -76,9 +76,9 @@ def print_intro_banner(mode_str):
 [red] :: ::::   :: ::::  ::::: ::  ::::: ::   :::: ::      :: ::::  ::   :::  :::: ::   ::   :::[/red]    
 [red]:: : ::   : :: : :   : :  :    : :  :   :: :  :      :: : ::    :   : :  :: : :     :   : :[/red]    
                                                                                              
-Parses SharpHound & AzureHound JSON files → finds AD/Azure attack paths & misconfigurations
+Parses SharpHound, AzureHound, and BloodHound-Python JSON files → finds AD/Azure attack paths & misconfigurations
 Mode: [cyan]{mode_str}[/cyan]
-Supports both Active Directory (SharpHound) and Azure AD (AzureHound) data.
+Supports both Active Directory (SharpHound/BloodHound-Python) and Azure AD (AzureHound) data.
 For authorized security testing / red teaming only.
 Use --help for all options.
 """,
