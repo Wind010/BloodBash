@@ -1499,11 +1499,11 @@ def export_to_dot(G, dot_path, domain_filter=None):
     console.print(f"[dim]Render with: dot -Tpng {dot_path} -o graph.png[/dim]")
 
 # ────────────────────────────────────────────────
-# Main with 
+# Main execution
 # ────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser(description="BloodBash - Advanced BloodHound & AzureHound Offline Analyzer")
-    parser.add_argument('directory', nargs='?', default='.', help='Path to SharpHound & AzureHound JSON files')
+    parser.add_argument('directory', nargs='?', default='.', help='Path to SharpHound & AzureHound JSON files or zip archive.')
     parser.add_argument('--shortest-paths', action='store_true')
     parser.add_argument('--dangerous-permissions', action='store_true')
     parser.add_argument('--adcs', action='store_true')
